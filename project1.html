@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakes and Pastries Gallery</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    } 
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.846); /* Box shadow for elevation */
+      position: relative;
+      z-index: 1; 
+      
+    }
+
+    nav strong {
+      font-size: 1.2rem;
+      color: rgba(0, 0, 0, 0.846);
+    }
+
+    nav div {
+      display: flex;
+      gap: 10px;
+    }
+
+    nav button {
+      background-color: rgba(0, 0, 0, 0.846);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: rgba(211, 211, 211, 0.759);
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-start; /* Start from the left */
+      gap: 90px; /* Add spacing between items */
+      list-style-type: none;
+      padding: 20px 70px;
+      margin: 0;
+     
+      
+    }
+
+    ul li {
+      margin: 0 15px;
+      font-size: 1rem;
+      color: #34495e;
+    }
+
+    ul li:hover {
+      color: rgba(211, 211, 211, 0.867);
+    }
+
+    header {
+      text-align: center;
+      margin: 0;
+      background-color: #f7f9f9;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #2c3e50;
+    }
+    .gallery-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4A4A4A;
+}
+
+.cakes, .pastries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Reduce space between grid items */
+  margin-bottom: 20px; /* Reduce bottom margin */
+}
+
+.cakes div, .pastries div {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+}
+
+.cakes img, .pastries img {
+  width: 100%;
+  max-width: 250px; /* Increase maximum width */
+  height: 250px; /* Increase height */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cakes p, .pastries p {
+  margin: 20px 0 ; /* Maintain small space above the paragraph */
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+ </style>
+</head>
+<body>
+  <nav>
+    <strong>Cakes and Pastries Gallery</strong>
+    <div>
+      <button>Discover</button>
+      <button>Favourites</button>
+    </div>
+  </nav>
+  <ul>
+    <li>Cakes</li>
+    <li>Pastries</li>
+    <li>Cookies</li>
+    <li>Cupcakes</li>
+    <li>Ice cream</li>
+    <li>Candy</li>
+  </ul>
+  <header>
+    <h1>Explore our delicious selection of cakes and pastries!</h1>
+  </header>
+  <div class="gallery-container">
+   <!-- Cakes Section -->
+   <h1>Sweet Cakes Delight</h1>
+   <div class="cakes">
+     <div>
+       <img src="IMAGES/vanilla frost cake.png" alt="Vanilla Frost Cake">
+       <p>Vanilla Frost Cake</p>
+     </div>
+     <div>
+       <img src="IMAGES/Tuxedo moist cake.png" alt="Tuxedo Moist Cake">
+       <p>Tuxedo Moist Cake</p>
+     </div>
+     <div>
+       <img src="IMAGES/Red Velvet Cake.png" alt="Red Velvet Delight">
+       <p>Red Velvet Delight</p>
+     </div>
+     <div>
+       <img src="IMAGES/Mocha Ripple Delight.png" alt="Mocha Ripple Delight">
+       <p>Mocha Ripple Delight</p>
+     </div>
+     <div>
+       <img src="IMAGES/Lemon Ricotta Cake.png" alt="Lemon Ricotta Cake">
+       <p>Lemon Ricotta Cake</p>
+     </div>
+     <div>
+       <img src="IMAGES/Golden Honey Drizzle.png" alt="Golden Honey Drizzle">
+       <p>Golden Honey Drizzle</p>
+     </div>
+   </div>
+ 
+   <!-- Pastries Section -->
+   <h1>Sweet Pastries Delight</h1>
+   <div class="pastries">
+     <div>
+       <img src="IMAGES/Strawberry Flakky Puff.png" alt="Strawberry Flakky Puff">
+       <p>Strawberry Flakky Puff</p>
+     </div>
+     <div>
+       <img src="IMAGES/ham and cheese pastry.png" alt="Ham and Cheese Pastry">
+       <p>Ham and Cheese Pastry</p>
+     </div>
+     <div>
+       <img src="IMAGES/Cinnabon cinnamon roll.png" alt="Cinnabon Cinnamon Roll">
+       <p>Cinnabon Cinnamon Roll</p>
+     </div>
+     <div>
+       <img src="IMAGES/Almond Sunrise Croissant.png" alt="Almond Sunrise Croissant">
+       <p>Almond Sunrise Croissant</p>
+     </div>
+     <div>
+       <img src="IMAGES/danish.png" alt="Danish Pastry">
+       <p>Danish Pastry</p>
+     </div>
+     <div>
+       <img src="IMAGES/Chocolate Eclairs.png" alt="Chocolate Eclairs">
+       <p>Chocolate Eclairs</p>
+     </div>
+   </div>
+ </div>
+ 
+</body>
+</html>

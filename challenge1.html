@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake & Dessert Gallery</title>
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.gallery-item4 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.gallery-item10 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.gallery-container img {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container p {
+    margin-top: 10px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    .gallery-item4,
+    .gallery-item10 {
+        grid-column: 1 / span 2; /* Adjust wide items to fit */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .gallery-item4,
+    .gallery-item10 {
+        grid-column: 1 / span 1; /* Full width on small screens */
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header p {
+        font-size: 2em;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+ <header>
+  <h1>Cake & Dessert Gallery</h1>
+  <p>Explore our delicious selection of cakes and pastries!</p>
+</header>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="IMAGES/vanilla frost cake.png" alt="Cake 1">
+            <p>Vanilla Frost Cake</p>
+        </div>
+        <div class="gallery-item">
+            <img src="IMAGES/Tuxedo moist cake.png" alt="Cake 2">
+            <p>Tuxedo Moist Cake</p>
+        </div>
+        <div class="gallery-item">
+            <img src="IMAGES/Red Velvet Cake.png" alt="Cake 3">
+            <p>Red Velvet Delight</p>
+        </div>
+        <div class="gallery-item4">
+            <img src="IMAGES/Strawberry Flakky Puff.png" alt="Dessert 1">
+            <p>Strawberry Flakky Puff</p>
+        </div>
+        <div class="gallery-item">
+            <img src="IMAGES/ham and cheese pastry.png" alt="Dessert 2">
+            <p>Ham and Cheese Pastry</p>
+        </div>
+        <div class="gallery-item">
+            <img src="IMAGES/Mocha Ripple Delight.png" alt="Cake 4">
+            <p>Mocha Ripple Delight</p>
+        </div>
+        <div class="gallery-item">
+         <img src="IMAGES/Lemon Ricotta Cake.png" alt="Cake 5">
+         <p>Lemon Ricotta Cake</p>
+     </div>
+     <div class="gallery-item">
+      <img src="IMAGES/Golden Honey Drizzle.png" alt="Cake 6">
+      <p>Golden Honey Drizzle</p>
+  </div>
+        <div class="gallery-item">
+            <img src="IMAGES/Cinnabon cinnamon roll.png" alt="Dessert 3">
+            <p>Cinnabon Cinnamon Roll</p>
+        </div>
+        <div class="gallery-item10">
+            <img src="IMAGES/Almond Sunrise Croissant.png" alt="Dessert 4">
+            <p>Almond Sunrise Croissant</p>
+        </div>
+    </div>
+
+</body>
+</html>
