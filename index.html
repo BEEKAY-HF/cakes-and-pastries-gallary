@@ -117,6 +117,47 @@ h1 {
   font-weight: 600;
   color: #333;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .cakes, .pastries {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  ul {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .cakes, .pastries {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .cakes img, .pastries img {
+    max-width: 100%; /* Adjust to fit smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .cakes p, .pastries p {
+    font-size: 14px; /* Slightly smaller text */
+  }
+}
 
  </style>
 </head>
